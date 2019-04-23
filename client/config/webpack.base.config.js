@@ -19,7 +19,7 @@ module.exports = {
         rules: [ //配置加载器
             {
                 test: /\.js$/, //配置要处理的文件格式，一般使用正则表达式匹配
-                loaders:'babel-loader', //使用的加载器名称
+                loaders:'babel-loader?cacheDirectory=true', //使用的加载器名称
                 include: path.resolve(__dirname, '../src'),
             },
             {
